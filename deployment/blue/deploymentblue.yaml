@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hotel-blue
-  namespace: hotel
+  name: hello-blue
+  namespace: hello
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hotel
+      app: hello
       version: blue
   template:
     metadata:
       labels:
-        app: hotel
+        app: hello
         version: blue
     spec:
       containers:
-      - name: hotel
+      - name: hello
         image: vipindevops/blue-green:tagname:1.0
         ports:
         - containerPort: 80

@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hotel-svc-stage
-  namespace: hotel
+  name: hello-svc-stage
+  namespace: hello
 spec:
   ports:
   - port: 80
@@ -10,6 +10,6 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: hotel
+    app: hello
     version: green
   type: LoadBalancer
