@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: chudinov/nginx-hello:1.1
+        image: index.docker.io/chudinov/nginx-hello:1.1
         ports:
         - containerPort: 80
         resources:
